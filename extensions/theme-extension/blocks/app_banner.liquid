@@ -1,0 +1,48 @@
+{% style %}
+  .promo-banner {
+    background-color: #4CAF50; /* A pleasant green color */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+{% endstyle %}
+
+<script>
+  // Use an immediately invoked function expression (IIFE) to avoid polluting the global scope.
+  (function() {
+    // Create a new div element for the banner.
+    const banner = document.createElement('div');
+
+    // Add the "promo-banner" class for styling.
+    banner.className = 'promo-banner';
+
+    // Set the content of the banner.
+    banner.innerHTML = '🎉 Free Shipping on All Orders! 🎉';
+
+    // Prepend the banner to the body of the document.
+    // This ensures it appears at the very top of the page.
+    document.body.prepend(banner);
+
+    // Add margin to the body to prevent content overlap.
+    document.body.style.marginTop = '60px'; // Adjust this value to match the banner's height + padding.
+  })();
+</script>
+
+{% schema %}
+  {
+    "name": "App Banner",
+    "target": "body"
+  }
+{% endschema %}
