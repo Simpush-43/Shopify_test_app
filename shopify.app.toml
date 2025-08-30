@@ -2,7 +2,7 @@
 
 client_id = "263a16ee85d1cdff43a6760eb1382912"
 name = "my-dev-store"
-application_url = "https://short-clark-eligible-respected.trycloudflare.com"
+application_url = "https://zones-their-princeton-wicked.trycloudflare.com"
 embedded = true
 handle = "my-dev-store"
 
@@ -26,7 +26,7 @@ api_version = "2025-07"
 scopes = "write_products, read_themes, write_themes"
 
 [auth]
-redirect_urls = ["https://short-clark-eligible-respected.trycloudflare.com/auth/callback", "https://short-clark-eligible-respected.trycloudflare.com/auth/shopify/callback", "https://short-clark-eligible-respected.trycloudflare.com/api/auth/callback"]
+redirect_urls = ["https://zones-their-princeton-wicked.trycloudflare.com/auth/callback", "https://zones-their-princeton-wicked.trycloudflare.com/auth/shopify/callback", "https://zones-their-princeton-wicked.trycloudflare.com/api/auth/callback"]
 
 [pos]
 embedded = false
